@@ -18,8 +18,16 @@
 
 .gigaTitle {
     font-size: 200px;
+    transition: 100ms;
 }
 
-body {
-    height: 200vh;
+
+/* FOTO ITEMS */
+.cardContainer{
+    position: relative;
+    top: 100vh;
+}
+
+.circle {
+
 }

@@ -10,24 +10,63 @@
     font-style: normal;
 }
 
-.titleFont {
+body {
+    min-height: 200vh;
+}
+
+.color-P{
+    color: var(--color-P)
+}
+
+.bg-p{
+    background-color: var(--color-P);
+}
+
+.title-font {
     font-family: "Ojuju", sans-serif;
-    font-style: normal;
-    color: var(--color-P);
+    font-style: normal; 
 }
 
-.gigaTitle {
-    font-size: 200px;
-    transition: 100ms;
+.transition {
+    transition: 0.7s;
+}
+
+/* NAVBAR */
+.nav-scrolled{
+    margin: 5vh 15vw;
+    background-color: rgba(139, 0, 0, 0.5) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-A);
+    border-radius: 10px;
+}
+
+/* HEADER */
+
+.masthead{
+    height: 75vh;
+    background-color: var(--color-P);
+}
+
+.boxQuote{
+    height: 25vh;
+}
+
+/* CATEGORIE */
+
+.img-category{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--color-P);
+    padding: 5px;
 }
 
 
-/* FOTO ITEMS */
-.cardContainer{
-    position: relative;
-    top: 100vh;
-}
+/* SEZIONE NUMERI */
 
-.circle {
-
-}
+.box-numeri{
+    height: 150px;
+    background-color: var(--color-P);
+    border-radius: 20px;
+    border: 2px solid black;
+    color: var(--color-S);
+} 

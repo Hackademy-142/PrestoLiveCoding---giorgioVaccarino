@@ -1,19 +1,33 @@
-let title = document.querySelector('#title')
+// EVETO SCROLL
 
-let giphyEmbed = document.querySelectorAll('#giphy-embed')
-
-// EVENTO SCROLL
+let navbar = document.querySelector('.navbar')
 
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 0){
-        title.classList.remove('gigaTitle')
-        giphyEmbed.forEach((el)=>{
-            el.classList.add('d-md-block')
-        })
+        navbar.classList.add('nav-scrolled')
     } else {
-        title.classList.add('gigaTitle')
-        giphyEmbed.forEach((el)=>{
-            el.classList.remove('d-md-block')
-        })
+        navbar.classList.remove('nav-scrolled')
     }
 })
+
+let numUsers = document.querySelector('#numUsers')
+let numArticles = document.querySelector('#numArticles')
+let numComments = document.querySelector('#numComments')
+
+
+
+function createInterval(elementId, finalNumber, frequency){
+    let counter = 0;
+    let interval = setInterval(()=>{
+        if(counter < finalNumber){
+            counter++;
+            elementId.innerHTML = counter;
+        } else {
+            clearInterval(interval);
+        }
+    }, frequency)
+};
+
+createInterval(numUsers, 500, 20)
+createInterval(numArticles, 1000, 10)
+createInterval(numComments, 200, 50)

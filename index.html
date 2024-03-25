@@ -12,18 +12,21 @@
         rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top nav-dark transition">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark transition">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Presto.it</a>
+            <a class="navbar-brand ms-5" href="#">Presto.it</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,7 +38,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Article</a>
+                        <a class="nav-link" href="#">Articoli</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Chi Siamo</a>
@@ -58,6 +61,14 @@
                         </ul>
                     </li>
                 </ul>
+                <ul class="navbar-nav fs-4 me-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -75,9 +86,11 @@
                 <button>ESPLORA</button>
                 <button>COMPRA</button>
             </div>
-            <div class="col-12 col-md-4 p-5">
-                <img class="w-100" src="https://picsum.photos/200" alt="">
+            <!-- COLONNA IMG -->
+            <div class="col-12 col-md-4 p-5 d-none d-md-block">
+                <img class="img-test" src="./red-background-with-gold.jpg" alt="red-background-with-gold">
             </div>
+            <!-- FINE COLONNA IMG -->
         </div>
         <div class="row boxQuote d-flex align-items-center">
             <div class="col-12 p-5">
@@ -89,28 +102,58 @@
     </header>
     <!-- FINE HEADER -->
 
+    <!-- ULTIMI ANNUNCI -->
+    <section class="container">
+        <div id="cardsWrapper" class="row justify-content-evenly">
+
+            <!-- <div class="col-11 col-md-3">
+                <div class="card podition-relative h-100">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-2">
+                        new
+                    </span>
+                    <div class="overflow-hidden ">
+                        <img src="https://picsum.photos/200" class="card-img-top img-card" alt="...">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="card-title text-center fw-bold mb-3">Nome Articolo</h3>
+                            <p class="card-text">Categoria: <span class="fs-4">Armi</span></p>
+                            <p class="card-text">Prezzo: <span class="fs-4">500</span></p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <i class="bi bi-heart fs-3"></i>
+                            <a href="#" class="btn btn-danger">compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+    <!-- FIN ULTIMI ANNUNCI -->
+
     <!-- SEZIONE CATEGORIE -->
     <div class="container">
-        <div class="row justify-content-evenly">
+        <div class="row justify-content-evenly overflow-hidden">
             <div class="col-12 my-5">
-                <h2 class="title-font display-1 color-P text-center border-bottom">CATETGORIE</h2>
+                <h2 id="categories" class="title-font display-1 color-P text-center border-bottom">CATETGORIE</h2>
             </div>
-            <div data-aos="fade-right" class="col-3 my-5 mx-1">
+            <div data-aos="fade-right" class="col-6 col-md-3 mx-md-1 my-5">
                 <img class="img-category" src="https://picsum.photos/200" alt="">
             </div>
-            <div data-aos="fade-down" data-aos-delay="100" class="col-3 my-5 mx-1">
+            <div data-aos="fade-down" data-aos-delay="100" class="col-6 col-md-3 mx-md-1 my-5">
                 <img class="img-category" src="https://picsum.photos/201" alt="">
             </div>
-            <div data-aos="fade-left" data-aos-delay="200" class="col-3 my-5 mx-1">
+            <div data-aos="fade-left" data-aos-delay="200" class="col-6 col-md-3 mx-md-1 my-5">
                 <img class="img-category" src="https://picsum.photos/202" alt="">
             </div>
-            <div data-aos="fade-up-right" data-aos-delay="500" class="col-3 my-5 mx-1">
+            <div data-aos="fade-up-right" data-aos-delay="500" class="col-6 col-md-3 mx-md-1 my-5">
                 <img class="img-category" src="https://picsum.photos/203" alt="">
             </div>
-            <div data-aos="fade-up" data-aos-delay="400" class="col-3 my-5 mx-1">
+            <div data-aos="fade-up" data-aos-delay="400" class="col-6 col-md-3 mx-md-1 my-5">
                 <img class="img-category" src="https://picsum.photos/204" alt="">
             </div>
-            <div data-aos="fade-up-left" data-aos-delay="300" class="col-3 my-5 mx-1">
+            <div data-aos="fade-up-left" data-aos-delay="300" class="col-6 col-md-3 mx-md-1 my-5">
                 <img class="img-category" src="https://picsum.photos/205" alt="">
             </div>
         </div>
@@ -123,15 +166,15 @@
             <div class="col-12 my-5">
                 <h2 class="title-font display-1 color-P text-center border-bottom">I NOSTRI NUMERI</h2>
             </div>
-            <div class="col-2 box-numeri d-flex flex-column align-items-center justify-content-center">
+            <div class="col-10 col-md-2 my-2 box-numeri d-flex flex-column align-items-center justify-content-center">
                 <h6 class="fs-2">Articoli:</h6>
                 <p class="fs-3"><span id="numArticles"></span>+</p>
             </div>
-            <div class="col-2 box-numeri d-flex flex-column align-items-center justify-content-center">
+            <div class="col-10 col-md-2 my-2 box-numeri d-flex flex-column align-items-center justify-content-center">
                 <h6 class="fs-2">Utenti:</h6>
                 <p class="fs-3"><span id="numUsers"></span>+</p>
             </div>
-            <div class="col-2 box-numeri d-flex flex-column align-items-center justify-content-center">
+            <div class="col-10 col-md-2 my-2 box-numeri d-flex flex-column align-items-center justify-content-center">
                 <h6 class="fs-2">Commenti:</h6>
                 <p class="fs-3"><span id="numComments"></span>+</p>
             </div>

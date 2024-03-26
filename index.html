@@ -24,7 +24,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark transition">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-p transition">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="#">Presto.it</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,10 +35,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Articoli</a>
+                        <a class="nav-link" href="./articoli.html">Articoli</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Chi Siamo</a>
@@ -103,7 +103,12 @@
     <!-- FINE HEADER -->
 
     <!-- ULTIMI ANNUNCI -->
-    <section class="container">
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12 my-5">
+                <h2 id="categories" class="title-font display-1 color-P text-center border-bottom">ULTIMI ANNUNCI</h2>
+            </div>
+        </div>
         <div id="cardsWrapper" class="row justify-content-evenly">
 
             <!-- <div class="col-11 col-md-3">
@@ -133,7 +138,7 @@
     <!-- FIN ULTIMI ANNUNCI -->
 
     <!-- SEZIONE CATEGORIE -->
-    <div class="container">
+    <div class="container my-5">
         <div class="row justify-content-evenly overflow-hidden">
             <div class="col-12 my-5">
                 <h2 id="categories" class="title-font display-1 color-P text-center border-bottom">CATETGORIE</h2>
@@ -180,7 +185,9 @@
             </div>
         </div>
     </div>
-    <!-- SEZIONE NUMERI -->
+    <!-- FINE SEZIONE NUMERI -->
+
+
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

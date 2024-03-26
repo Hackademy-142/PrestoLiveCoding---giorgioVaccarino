@@ -10,11 +10,11 @@ window.addEventListener('scroll', () => {
     }
 })
 
+// EVENTO NUMERI
+
 let numUsers = document.querySelector('#numUsers')
 let numArticles = document.querySelector('#numArticles')
 let numComments = document.querySelector('#numComments')
-
-
 
 function createInterval(elementId, finalNumber, frequency) {
     let counter = 0;

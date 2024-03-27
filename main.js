@@ -72,7 +72,7 @@ announcements.forEach((annuncio, i) => {
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <h3 class="card-title text-center fw-bold mb-3 text-truncate">${annuncio.name}</h3>
+                            <h3 class="card-title text-center fw-bold mb-3 text-truncate">${annuncio.nome}</h3>
                             <p class="card-text">Categoria: <span class="fs-4">${annuncio.categoria}</span></p>
                             <p class="card-text">Prezzo: <span class="fs-4">${annuncio.prezzo}</span></p>
                         </div>    
